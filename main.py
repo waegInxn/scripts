@@ -16,6 +16,7 @@ class AgreementGenerator:
         opt = webdriver.ChromeOptions()
         opt.add_argument("no-sandbox")
         opt.add_argument("--disable-dev-shm-usage")
+        opt.add_argument("--remote-debugging-port=9222") 
 
         self.driver = webdriver.Chrome('chromedriver', options=opt)
         self.user_name = ''
