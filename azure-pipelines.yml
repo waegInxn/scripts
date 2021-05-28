@@ -17,7 +17,7 @@ steps:
 
 - script: 
 
-    pip install selenium
+    sudo pip install selenium
     python main.py
 
 
