@@ -16,11 +16,8 @@ strategy:
 steps:
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '$(python.version)'
+    versionSpec: '3.7'
   displayName: 'Use Python $(python.version)'
 
-- script: |
-    python -m pip install --upgrade pip
-    python main.py
-  displayName: 'Install dependencies'
+- script: python main.py
 
