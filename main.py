@@ -12,12 +12,13 @@ import time
 class AgreementGenerator:
 
     def __init__(self):
-        
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
-        
+
+        options = webdriver.ChromeOptions()
+        options.addArguments("--no-sandbox")
+        options.addArguments("--disable-dev-shm-usage")
+
         self.driver = webdriver.Chrome('chromedriver', options)
+        self.driver = webdriver.Chrome('/Users/valentynpotapov/Desktop/scriptCreateAgreements/venv/chromedriver')
 
         self.user_name = ''
         self.password = ''
