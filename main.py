@@ -12,7 +12,7 @@ import time
 class AgreementGenerator:
 
     def __init__(self):
-        self.driver = webdriver.Chrome('/Users/valentynpotapov/Desktop/scriptCreateAgreements/venv/chromedriver')
+        self.driver = webdriver.Chrome('chromedriver')
 
         self.user_name = ''
         self.password = ''
