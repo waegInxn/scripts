@@ -18,8 +18,6 @@ class AgreementGenerator:
         options.add_argument("--disable-dev-shm-usage")
 
         self.driver = webdriver.Chrome('chromedriver', options)
-        self.driver = webdriver.Chrome('/Users/valentynpotapov/Desktop/scriptCreateAgreements/venv/chromedriver')
-
         self.user_name = ''
         self.password = ''
 
