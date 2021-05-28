@@ -15,5 +15,7 @@ strategy:
 
 steps:
 
-- script: python main.py
+- script: 
+pip install selenium
+python main.py
 
