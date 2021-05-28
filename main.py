@@ -12,7 +12,12 @@ import time
 class AgreementGenerator:
 
     def __init__(self):
-        self.driver = webdriver.Chrome('chromedriver')
+        
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        
+        self.driver = webdriver.Chrome('chromedriver', options)
 
         self.user_name = ''
         self.password = ''
