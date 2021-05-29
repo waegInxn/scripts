@@ -23,8 +23,8 @@ class AgreementGenerator:
         opt.add_argument("--remote-debugging-port=9222") 
 
         self.driver = webdriver.Chrome('chromedriver', options=opt)
-        self.user_name = ''
-        self.password = ''
+        self.user_name = 'valentynp@interxion.com'
+        self.password = 'Nevzlomatinxn1'
 
         self.opps = ['0062p00001Ct74CAAR','0062p00001Ct74FAAR','0062p00001Ct74NAAR','0062p00001Ct748AAB','0062p00001Ct74KAAR','0062p00001Ct74LAAR','0062p00001Ct74DAAR','0062p00001Ct74MAAR','0062p00001Ct74EAAR','0062p00001Ct74IAAR','0062p00001Ct74AAAR','0062p00001Ct74OAAR','0062p00001Ct74HAAR','0062p00001Ct74BAAR','0062p00001Ct74GAAR','0062p00001Ct749AAB','0062p00001Ct74JAAR']
         self.prod_url = 'https://interxion.my.salesforce.com/'
@@ -74,6 +74,8 @@ class AgreementGenerator:
 
         password = self.driver.find_element_by_id("i0118")
         password.send_keys(self.password)
+        
+        self.driver.find_element_by_id("idSIButton9").click()
 
     def create_agreeement(self, oppId):
 
