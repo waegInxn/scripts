@@ -76,6 +76,7 @@ class AgreementGenerator:
         password.send_keys(self.password)
         
         time.sleep(2)
+        print("sending password")
         self.driver.find_element_by_id("idSIButton9").click()
 
     def create_agreeement(self, oppId):
