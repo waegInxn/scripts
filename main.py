@@ -43,6 +43,7 @@ class AgreementGenerator:
 
         self.login_to_sandbox()
 
+        print('now will be input')
         b = input('Go to home page in your sandbox and click "y" : ')
 
         if b == 'y':
