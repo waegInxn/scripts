@@ -30,8 +30,8 @@ class AgreementGenerator:
         self.prod_url = 'https://interxion.my.salesforce.com/'
         self.prodmirror_url = 'https://interxion--prodmirror.my.salesforce.com/'
 
-        self.url = self.prod_url
-        #self.url = self.prodmirror_url
+        #self.url = self.prod_url
+        self.url = self.prodmirror_url
 
         self.login_as_user_id = '0052p00000Ad0Pp'
 
