@@ -72,6 +72,7 @@ class AgreementGenerator:
         self.driver.find_element_by_id("idSIButton9").click()
 
         WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.ID, "i0118")))
+        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.ID, "idSIButton9")))
 
         password = self.driver.find_element_by_id("i0118")
         password.send_keys(self.password)
