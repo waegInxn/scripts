@@ -83,6 +83,11 @@ class AgreementGenerator:
         time.sleep(2)
         print("sending password")
         self.driver.find_element_by_id("idSIButton9").click()
+        
+        print('before Verify button')
+        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.ID, "idSubmit_SAOTCC_Continue")))
+        print('after Verify button')
+        
 
     def create_agreeement(self, oppId):
 
